@@ -1,6 +1,7 @@
-body{
-    background-color: green;
-}        
+h1{
+    font-size: 40px;
+    text-align: center;
+}
         
         .navbar {
             background-color: #333;
@@ -12,41 +13,66 @@ body{
             transition: height 0.5s ease-in-out;
             border-radius: 10px;
         }
-        .navbar a {
-            color: #ccc;
-            text-decoration: none;
-            padding: 14px 20px;
-            display: block;
-            transition: color 0.3s ease;
-        }
-        .navbar a:hover {
-            color: #fff;
-        }
-        .dropdown {
-            position: relative;
-        }
-        .dropdown-content {
-            position: absolute;
-            background-color: #333;
-            min-width: 160px;
-            top: 100%;
-            left: 50%;
-            transform: translateX(-50%) translateY(-10px);
-            opacity: 0;
-            visibility: hidden;
-            transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
-            text-align: center;
-            padding: 10px 0;
-            border-radius: 5px;
-            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
-        }
-        .dropdown-content a {
-            padding: 12px 16px;
-            display: block;
-            white-space: nowrap;
-        }
-        .dropdown:hover .dropdown-content {
-            opacity: 1;
-            visibility: visible;
-            transform: translateX(-50%) translateY(0);
-        }
+            .navbar a {
+                color: #ccc;
+                text-decoration: none;
+                padding: 14px 20px;
+                display: block;
+                transition: color 0.3s ease;
+            }
+                .navbar a:hover {
+                    color: #fff;
+                }
+                    .dropdown {
+                        position: relative;
+                    }
+                        .dropdown-content {
+                            position: absolute;
+                            background-color: #333;
+                            min-width: 160px;
+                            top: 100%;
+                            left: 50%;
+                            transform: translateX(-50%) translateY(-10px);
+                            opacity: 0;
+                            visibility: hidden;
+                            transition: opacity 0.5s ease-in-out, transform 0.3s ease-in-out;
+                            text-align: center;
+                            padding: 10px 0;
+                            border-radius: 5px;
+                            box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+                        }
+                            .dropdown-content a {
+                                padding: 12px 16px;
+                                display: block;
+                                white-space: nowrap;
+                            }
+                                .dropdown:hover .dropdown-content {
+                                    opacity: 1;
+                                    visibility: visible;
+                                    transform: translateX(-50%) translateY(0);
+                                }
+
+                                                .slideshow-container {
+                                                    position: relative;
+                                                    max-width: 600px;
+                                                    width: 100%;
+                                                }
+                                                
+                                                .slide {
+                                                    display: none;
+                                                    width: 100%;
+                                                }
+                                                
+                                                .slide img {
+                                                    width: 100%;
+                                                    height: auto;
+                                                }
+                                                
+                                                .fade {
+                                                    animation: fadeEffect 1.5s ease-in-out;
+                                                }
+                                                
+                                                @keyframes fadeEffect {
+                                                    from { opacity: 0.4; }
+                                                    to { opacity: 1; }
+                                                }
